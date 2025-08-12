@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GhostDefense — First Look</title>
+  <meta name="description" content="Playback-only Vimeo embed hosted on GitHub Pages." />
+  <style>
+    :root { --bg:#0b0d10; --card:#12161b; --text:#e8edf2; --muted:#9aa6b2; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; color:var(--text); background:linear-gradient(180deg,var(--bg),#0e1116);}
+    .wrap{max-width:960px; margin:6vh auto; padding:24px}
+    .card{background:var(--card); border-radius:20px; padding:24px; box-shadow:0 10px 30px rgba(0,0,0,.35);}
+    h1{margin:0 0 8px; font-size:clamp(22px,3vw,36px)}
+    p{margin:0 0 16px; color:var(--muted)}
+    .ratio{position:relative; width:100%; border-radius:16px; overflow:hidden; background:#000}
+    .ratio::before{content:""; display:block; padding-top:56.25%}
+    .ratio iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+    .note{margin-top:14px; font-size:14px; color:var(--muted)}
+    .footer{opacity:.7; font-size:12px; text-align:center; margin-top:28px}
+    a{color:#7cc0ff; text-decoration:none}
+    a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GhostDefense — First Look</h1>
+      <p>Hosted on GitHub Pages with a privacy‑respecting Vimeo embed. Downloads disabled in Vimeo settings.</p>
+
+      <!-- Replace the VIDEO_ID below with your Vimeo numeric ID (e.g., 1109246936). -->
+      <!-- If your Vimeo video is password‑protected, the viewer will be prompted for it. -->
+      <div class="ratio">
+        <iframe
+          src="https://player.vimeo.com/video/1109245836?byline=0&title=0&portrait=0&dnt=1"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="GhostDefense First Look"></iframe>
+      </div>
+
+      <div class="note">
+        Tip: In Vimeo → <em>Settings → Privacy</em>, set <strong>Who can watch</strong> to <strong>Unlisted</strong> or <strong>Password</strong>,
+        disable <strong>Downloads</strong>, and under <strong>Where can this be embedded?</strong> choose <strong>Specific domains</strong> and add your GitHub Pages domain (e.g., <code>USERNAME.github.io</code> and/or your custom domain).
+      </div>
+    </div>
+
+    <div class="footer">© 2025 Charles H Lewis II — GhostDefense Home</div>
+  </div>
+</body>
+</html>
